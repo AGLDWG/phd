@@ -1,0 +1,277 @@
+# Created by vocabWrite-ttl.py
+# xls source version 0.1,                   Author:  Stephen Pratt
+
+#  This vocabulary
+@prefix specimenTypes: <https://linked.data.gov.au/def/phd/voc/specimenTypes> .
+@prefix : <https://linked.data.gov.au/def/phd/voc/specimenTypes/> .
+@prefix phd: <https://linked.data.gov.au/def/phd#> .
+
+# Standard ontologies
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix darwin: <http://rs.tdwg.org/dwc/terms/guides/rdf/> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Specialist ontologies
+@prefix taxaas: <https://uat-ag-bie.oztaxa.com/ws/taxon/> .
+
+specimenTypes:
+    a owl:Ontology , skos:ConceptScheme ;
+    dcterms:created "2023-08-25"^^xsd:date ;
+    dcterms:creator <https://orcid.org/0000-0003-3357-2307> ;
+    dcterms:contributor <a third orcid> ;
+    dcterms:contributor <a second orcid> ;
+    dcterms:contributor <add one or more contributors, enumerating the key 'contributorOrcidn'> ;
+    dcterms:modified "2023-08-28"^^xsd:date ;
+    dcterms:provenance "Created as part of the Plant Health Diagnostics Ontology" ;
+    dcterms:publisher https://linked.data.gov.au/org/daff ;
+    skos:definition "The material form of the specimen (but not a body part or sub-specimen), usually as the result of a preparation tenchnique"@en ;
+    skos:prefLabel "test / demo for APPD"@en ;
+    skos:scopeNote "Scope note for the concept scheme" ;
+    owl:versionIRI <https://linked.data.gov.au/def/phs/voc/specimenTypes/0.1> ;
+    skos:hasTopConcept
+        slide,
+		point,
+		pin,
+		vial,
+		image,
+		alcohol,
+		pressed plant material,
+		DNA extract,
+		spore print,
+		stage,
+		skin,
+		gelatin capsule,
+		wet,
+		dry,
+		spirit,
+		formalin;
+.
+
+:slide
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Microscope slide"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "A thin flat piece of glass, typically 75 by 26 mm (3 by 1 inches) and about 1 mm thick, used to hold objects for examination under a microscope." ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "https://dbpedia.org/resource/Microscope_slide" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "phd1" ;
+    phd2 "phd2" ;
+.
+
+:point
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Point"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "Triangle, Pinned point, Card, Carded" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "phd1" ;
+    phd2 "phd2" ;
+.
+
+:pin
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Pin"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "Pinned" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "phd1" ;
+    phd2 "phd2" ;
+.
+
+:vial
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Vial"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "Jar" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "phd1" ;
+    phd2 "phd2" ;
+.
+
+:image
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Image"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "Photograph, Transparency, Illustration" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "blah" ;
+    phd2 "jjjj" ;
+.
+
+:alcohol
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Alcohol "@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "ethanol, 70% ethanol" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "dfg" ;
+    phd2 "dfg" ;
+.
+
+:pressed plant material
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Pressed plant material"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:DNA extract
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "DNA extract"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:spore print
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Spore print"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:stage
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Stage"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:skin
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Skin"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:gelatin capsule
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Gelatin capsule"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:wet
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "wet"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "could be promoted to a skos:broader status" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:dry
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "nan"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "could be promoted to a skos:broader status" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:spirit
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "nan"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "nan" ;
+    skos:definition "nan" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "nan" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
+:formalin
+    a skos:Concept , phd:specimenType ;
+    rdfs:prefLabel "Formalin"@en ;
+    rdfs:isDefinedBy specimenTypes: ;
+    skos:inScheme specimenTypes: ;
+    skos:altLabel "Formaldehyde" ;
+    skos:definition "Saturated aqueous solution of formaldehyde" ;
+    rdfs:comment "nan" ;
+    rdfs:seeAlso "https://dbpedia.org/resource/Formaldehyde" ;
+    skos:topConceptOf "specimenTypes:" ;
+    phd1 "nan" ;
+    phd2 "nan" ;
+.
+
